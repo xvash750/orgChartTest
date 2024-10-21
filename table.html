@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="styles/commonStyles.css">
+    <link rel="stylesheet" href="styles/menuStyles.css">
+    <link rel="stylesheet" href="styles/tableSaveButton.css">
+    <link rel="stylesheet" href="styles/tableStyles.css">
+</head>
+<body>
+    <div class="banner">
+        <div>Table</div>
+    </div>
+    <div class="mini-banner">
+        <button class="menu-button" onclick="toggleMenu()">Menu</button>
+        <button class="save-button" onclick="saveData()">Save</button> 
+    </div>
+    <div class="menu" id="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="org-chart.html">Org Chart</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="upload.html">Upload</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Uploaded Data Table</h1>
+        <div id="data-table"></div>
+    </div>
+
+
+    <!-- Other scripts -->
+    <script src="javascripts/loginScripts/loginCheck.js"></script>
+    <script src="javascripts/commonScript/menuScript.js"></script>
+    <script src="javascripts/tableScripts/tableSort.js"></script>
+    <script src="javascripts/tableScripts/tableSaveEdits.js"></script>
+    <script src="javascripts/tableScripts/tableRender1.js"></script>
+    <script src="javascripts/tableScripts/tableRender2.js"></script>
+</body>
+</html>

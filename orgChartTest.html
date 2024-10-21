@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Org Chart</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PptxGenJS/3.9.0/pptxgen.min.js"></script>
+    <link rel="stylesheet" href="styles/commonStyles.css">
+    <link rel="stylesheet" href="styles/menuStyles.css">
+    <link rel="stylesheet" href="styles/nodeStyles.css">
+    <link rel="stylesheet" href="styles/filterMenuStyle.css">
+    <link rel="stylesheet" href="styles/chartStyles.css">
+    <script src="https://cdn.jsdelivr.net/npm/d3@7.0.0/dist/d3.min.js"></script>
+    <script src="javascripts/orgChartScripts/levelHandler.js"></script>
+
+</head>
+<body>
+    <div class="banner">
+        <button class="menu-button" onclick="toggleMenu()">Menu</button>
+        <button class="filter-button" onclick="toggleFilterMenu()">Filters</button>
+        <button class="collapse-button" id="collapseAllBtn">Collapse All</button>
+        <button class="expand-button" id="expandAllBtn">Expand All</button>
+        <button class="pdf-button" onclick="downloadPDF()">Download as PDF</button>
+        <button class="pptx-button" onclick="downloadPPTX()">Download as PPTX</button>
+        <select id="levelDropdown">
+                <option value="0">Level 0</option>
+                <option value="1">Level 1</option>
+                <option value="2">Level 2</option>
+                <option value="3">Level 3</option>
+                <option value="4">Level 4</option>
+                <option value="5">Level 5</option>
+                <option value="6">Level 6</option>
+                <option value="7">Level 7</option>
+                <option value="8">Level 8</option>
+                <option value="9">Level 9</option>
+                <option value="10">Level 10</option>
+            </select>
+        </select>
+        
+        <div class="org-chart-title">Org Chart</div>
+    </div>
+    </div>
+    <div class="mini-banner"></div>
+    <div class="menu" id="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="org-chart.html">Org Chart</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="upload.html">Upload</a></li>
+        </ul>
+    </div>
+    <div class="filter-menu" id="filterMenu">
+        <h2>Filters</h2>
+        <label for="teamDropdown">Filter by Team:</label>
+        <select id="teamDropdown">           
+        </select>
+        <label for="nameDropdown">Filter by Name:</label>
+        <select id="nameDropdown">           
+        </select>
+    </div>
+    <svg id="org-chart"></svg>
+    <script src="javascripts/loginScripts/loginCheck.js"></script>
+    <script src="javascripts/orgChartScripts/filtering.js"></script>
+    <script src="javascripts/orgChartScripts/dropdownHandler.js"></script>
+    <script src="javascripts/commonScript/menuScript.js"></script>
+    <script src="javascripts/commonScript/filterMenuToggle.js"></script>
+    <script src="javascripts/orgChartScripts/orgChartRenderingAndUpdate.js"></script>
+
+    
+    </body>
+</html>

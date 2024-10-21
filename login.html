@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBT Position Code Control Centre</title>
+    <link rel="stylesheet" href="styles/commonStyles.css"> <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles/logInStyles.css"> <!--Link to log in form styles-->
+</head>
+<body>
+   <div class="banner">
+    DBT Position Code Control Centre
+   </div>
+   <div class="content">
+    <p>This is where the log in page will go</p>
+   </div>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm" onsubmit="handleLogin(event)">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <input type="checkbox" id="togglePassword">Show Password
+            <button type="submit">Login</button>
+        </form>
+        <p id="error-message"></p>
+    </div>
+    <script src="javascripts/loginScripts/logInScript.js"></script> <!-- Link to your external JS file -->
+    <script src="javascripts/loginScripts/passwordToggle.js"></script>
+</body>
+</html>
+</html>
