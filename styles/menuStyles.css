@@ -1,0 +1,43 @@
+.menu-button:hover, .collapse-button:hover, .expand-button:hover {
+    background-color: #3498db; /* Lighter blue on hover */
+}
+.menu {
+    height: 100vh; /* Full height of the viewport */
+    width: 250px; /* Width of the menu */
+    position: fixed; /* Fixed position */
+    left: -250px; /* Hide the menu off-screen */
+    background-color: #ecf0f1; /* Light background */
+    transition: 0.3s; /* Smooth transition */
+    padding: 20px; /* Padding inside the menu */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Shadow for the menu */
+    z-index: 1; /* Ensure it's on top */
+}
+.menu.active {
+    left: 0; /* Show the menu */
+}
+.content {
+    max-width: 100vw; /* Maximum width of the content */
+    max-height: 100vh; /* Maximum height of the content */
+    overflow: auto; /* Enable scrolling if content exceeds size */
+    padding: 50px; /* Padding for content */
+}
+.menu ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+.menu li {
+    margin: 10px 0; /* Space between buttons */
+}
+.menu a {
+    display: inline-block; /* Make it a block element */
+    background-color: #2980b9; /* Blue background */
+    color: white; /* White text */
+    padding: 10px 15px; /* Padding for buttons */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for the buttons */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+.menu a:hover {
+    background-color: #3498db; /* Lighter blue on hover */
+}

@@ -1,0 +1,30 @@
+.node rect {
+    cursor: pointer;
+    fill: #fff; /* Default fill color for nodes */
+    stroke: #2980b9; /* Blue stroke color */
+    stroke-width: 2px; /* Width of the stroke */
+    border-radius: 20px;
+
+}
+.node text {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    fill: #333;
+}
+.link {
+    fill: none;
+    stroke: #2980b9; /* Blue links */
+    stroke-width: 2px;
+}
+/* New filter menu styles */
+.filter-menu {
+    height: 100vh; /* Full height of the viewport */
+    width: 250px; /* Width of the menu */
+    position: fixed; /* Fixed position */
+    right: -250px; /* Hide the menu off-screen (right) */
+    background-color: #ecf0f1; /* Light background */
+    transition: 0.3s; /* Smooth transition */
+    padding: 20px; /* Padding inside the menu */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); /* Shadow for the menu */
+    z-index: 1; /* Ensure it's on top */
+}

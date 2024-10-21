@@ -1,0 +1,18 @@
+.save-button {
+    background-color: #27ae60; /* Green button */
+    color: white;
+    border: none;
+    padding: 10px 15px; /* Padding for button */
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Font size for the button */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+.save-button:hover {
+    background-color: #2ecc71; /* Lighter green on hover */
+}
+
+th {
+    background-color: #2980b9; /* Soft pink header */
+    cursor: pointer; /* Change cursor to indicate clickable header */
+}

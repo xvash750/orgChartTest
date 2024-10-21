@@ -1,0 +1,56 @@
+    /* Set body and html to full height and remove margins */
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Make the SVG take up the entire viewport */
+    #org-chart {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Optional: Ensure the banner and menus do not overlap the SVG */
+    .banner {
+        position: relative; /* Adjust if needed */
+        z-index: 1; /* Keep it above the SVG */
+    }
+
+    .mini-banner {
+        position: relative; /* Adjust if needed */
+        z-index: 1; /* Keep it above the SVG */
+    }
+    /* Level dropdown styling */
+.level-dropdown {
+    background-color: #2980b9; /* Same blue background as buttons */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    padding: 10px; /* Padding for the dropdown */
+    border-radius: 20px; /* Rounded corners */
+    font-size: 0.5em; /* Font size to match buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Shadow for the dropdown */
+    transition: background-color 0.3s; /* Transition for hover effect */
+    margin-right: 10px; /* Space to the right of the dropdown */
+}
+
+/* Hover effect for the dropdown */
+.level-dropdown:hover {
+    background-color: #3498db; /* Lighter blue on hover */
+}
+
+/* Specific styling for the dropdown options */
+.level-dropdown option {
+    background-color: #2980b9; /* Same blue background */
+    color: white; /* White text color */
+}
+
+/* Styling for selected option */
+.level-dropdown option:checked {
+    background-color: #3498db; /* Lighter blue when selected */
+}
+.org-chart-title {
+    margin-left: auto; /* Push the title to the right */
+    font-size: 1.5em; /* Ensure font size matches */
+}

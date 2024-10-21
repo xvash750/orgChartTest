@@ -1,0 +1,24 @@
+svg {
+    background-color: #fff; /* White background for the SVG */
+    width: 100%;
+    height: calc(100vh-300); /* Adjust for banner height */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 200px;
+}
+table {
+    width: 90%; /* Full width */
+    border-collapse: collapse; /* Collapse borders */
+    margin-top: 20px; /* Space above the table */
+    margin-left: 40px;
+    margin-bottom: 200px;
+
+}
+th, td {
+    border: 1px solid #000000; /* Dark purple border */
+    padding: 8px; /* Padding inside cells */
+    text-align: left; /* Align text to the left */
+}
+th {
+    background-color: #2980b9; /* Soft pink header */
+}
